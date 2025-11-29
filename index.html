@@ -71,12 +71,13 @@
       font-size: 24px;
     }
 
-    video {
-      width: 100%;
-      height: 430px;
-      margin-top: 20px;
-      border-radius: 10px;
-      background: #000;
+    .section-title {
+      margin-top: 30px;
+      font-size: 32px;
+      font-weight: bold;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #444;
+      color: #ff8dd6;
     }
 
     @media (max-width: 700px) {
@@ -116,22 +117,26 @@
   </div>
 
   <div class="content">
+
+    <!-- Project Section Title -->
+    <div class="section-title">Projects</div>
+
     <h2>Multimodal UAV Simulation Benchmark</h2>
 
     <p style="color:#ccc; font-size:16px; line-height:24px;">
-    I developed a high-fidelity multimodal simulation and data-generation pipeline for UAV perception, integrating synchronized RGB–IR–LiDAR–Radar–DVS sensing, realistic UAV dynamics, and unified coordinate transformation. I also designed LGFusionNet, a LiDAR-guided multimodal fusion baseline and a full evaluation framework covering 6-DoF pose estimation, 3D detection, tracking, and trajectory prediction.
+      I developed a multimodal simulation pipeline for UAV perception based on the CARLA UE4 engine, integrating synchronized RGB–IR–LiDAR–Radar–DVS sensing and UAV flight-dynamics modeling. 
+      This video shows an overview of the system’s visual and geometric outputs.
     </p>
 
     <div style="margin-top:20px;">
-    <iframe 
-        src="https://drive.google.com/file/d/1CEAs879mZJNzco0JfyKbrDyAbU8xD8xP/preview"
-        width="100%" 
-        height="430" 
-        allow="autoplay"
-        style="border:none; border-radius:10px;">
-    </iframe>
+      <iframe 
+          src="https://drive.google.com/file/d/1CEAs879mZJNzco0JfyKbrDyAbU8xD8xP/preview"
+          width="100%" 
+          height="430" 
+          allow="autoplay"
+          style="border:none; border-radius:10px;">
+      </iframe>
     </div>
-
 
   </div>
 
