@@ -13,7 +13,6 @@
       color: #fff;
     }
 
-    /* 顶部整体容器：左右两栏 */
     .header {
       display: flex;
       align-items: center;
@@ -22,17 +21,15 @@
       gap: 40px;
     }
 
-    /* 左侧照片（方形） */
     .photo {
       width: 220px;
       height: 220px;
-      border-radius: 10px;   /* 方形 + 微圆角 */
+      border-radius: 10px;
       object-fit: cover;
       border: 4px solid #fff;
       box-shadow: 0 4px 16px rgba(0,0,0,0.4);
     }
 
-    /* 右侧文字区域 */
     .info-box {
       max-width: 450px;
     }
@@ -46,6 +43,7 @@
     .contact {
       font-size: 18px;
       line-height: 32px;
+      margin-bottom: 20px;
     }
 
     .contact a {
@@ -54,7 +52,12 @@
       font-weight: bold;
     }
 
-    /* 内容部分 */
+    .about {
+      font-size: 17px;
+      line-height: 26px;
+      color: #ddd;
+    }
+
     .content {
       max-width: 900px;
       margin: 0 auto;
@@ -76,10 +79,12 @@
       background: #000;
     }
 
-    /* 手机端响应式：上下排列 */
     @media (max-width: 700px) {
       .header {
         flex-direction: column;
+        text-align: center;
+      }
+      .info-box {
         text-align: center;
       }
     }
@@ -88,33 +93,33 @@
 
 <body>
 
-  <!-- 顶部部分 -->
   <div class="header">
-    
-    <!-- 左侧照片 -->
     <img 
       class="photo" 
       src="https://raw.githubusercontent.com/David-bit-jpg/davidwjl.github.io/main/me.jpg"
       alt="Jiale Wang Photo"
     >
 
-    <!-- 右侧信息 -->
     <div class="info-box">
       <div class="name">Jiale Wang</div>
+
       <div class="contact">
         📧 jialewan@usc.edu<br>
         📞 +1 626 565 6870<br>
         🔗 <a href="https://github.com/David-bit-jpg" target="_blank">GitHub</a>
       </div>
-    </div>
 
+      <div class="about">
+        I am a Computer Science Games major and Artificial Intelligence Applications minor at the University of Southern California. 
+        I am also a fourth-year trumpet player in the USC Trojan Marching Band.
+      </div>
+    </div>
   </div>
 
-  <!-- 内容部分：视频 -->
   <div class="content">
     <h2>Video Projects</h2>
 
-    <!-- 你的视频（先是示例） -->
+    <!-- Replace these with your actual video raw links -->
     <video controls>
       <source src="https://raw.githubusercontent.com/David-bit-jpg/your-portfolio/main/video1.mp4" type="video/mp4">
     </video>
