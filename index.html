@@ -3,82 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name – Video Portfolio</title>
+  <title>Jiale Wang – Portfolio</title>
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f8f8f8;
       margin: 0;
-      padding: 0;
-      color: #222;
+      font-family: Arial, sans-serif;
+      background: #1e1e1e;
+      color: #ffffff;
     }
 
-    .container {
-      max-width: 880px;
-      margin: auto;
-      padding: 40px 20px;
+    .header {
+      text-align: center;
+      padding: 50px 20px;
     }
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
+    .name {
+      font-size: 42px;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    .photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffffff;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.4);
+    }
+
+    .contact {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    .contact a {
+      color: #ff8dd6;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
     h2 {
-      font-size: 22px;
       margin-top: 40px;
-      border-left: 4px solid #007aff;
+      border-left: 4px solid #ff8dd6;
       padding-left: 10px;
-    }
-
-    .video-block {
-      margin-top: 20px;
-      margin-bottom: 40px;
+      font-size: 24px;
     }
 
     iframe, video {
       width: 100%;
-      height: 400px;
+      height: 420px;
       border-radius: 10px;
       border: none;
       background: #000;
-    }
-
-    p {
-      margin-top: 10px;
-      color: #555;
+      margin-top: 20px;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <h1>Your Name</h1>
-    <p>Email: your@email.com</p>
+  <!-- Header -->
+  <div class="header">
+    <img class="photo" 
+         src="https://drive.google.com/uc?export=view&id=1AAV9WFCEUSTmVeGiF2e-o1LL9t3FROvR" 
+         alt="Jiale Wang Photo">
 
+    <div class="name">Jiale Wang</div>
+
+    <div class="contact">
+      📧 jialewan@usc.edu<br>
+      📞 +1 626 565 6870<br>
+      🔗 <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="content">
     <h2>Video Projects</h2>
 
-    <!-- ▼▼ YouTube / Vimeo / Bilibili 视频示例 ▼▼ -->
-    <div class="video-block">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
-      <p>Project 1 – Short description of the video.</p>
-    </div>
-
-    <div class="video-block">
-      <iframe src="https://player.bilibili.com/player.html?bvid=BV1xxxxxx" allowfullscreen></iframe>
-      <p>Project 2 – Description about this demo.</p>
-    </div>
-
-    <!-- ▼▼ 本地 MP4 视频示例 ▼▼ -->
-    <div class="video-block">
-      <video controls>
-        <source src="your_video.mp4" type="video/mp4">
-      </video>
-      <p>Project 3 – This is a local mp4 video.</p>
-    </div>
+    <!-- 示例视频 — 你之后可以换成自己的 -->
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
 
   </div>
+
 </body>
 </html>
