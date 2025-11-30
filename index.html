@@ -152,7 +152,14 @@
       <!-- Project 1 -->
       <h2>Multimodal UAV Simulation Benchmark</h2>
       <p style="color:#ccc; font-size:16px; line-height:24px;">
-        Designed and implemented the complete multimodal simulation and data-generation pipeline for a 3D UAV perception benchmark built on the UE4-based CARLA engine.
+        We designed and implemented the complete multimodal simulation and data-generation pipeline for a 3D UAV perception
+        benchmark built on the UE4-based CARLA engine. This pipeline integrates realistic UAV flight dynamics, synchronized
+        multi-sensor acquisition, cross-modal timestamp alignment, and unified coordinate transformation, enabling large-scale
+        generation of geometrically consistent RGB, LiDAR, radar, and DVS data across diverse scenes and weather conditions. As
+        an extension to the core pipeline, I developed a virtual infrared post-processing module that recreates sensor-level IR
+        characteristics absent in CARLA, allowing efficient production of high-quality thermal imagery at scale. The final
+        dataset contains over 400K spatio-temporally aligned frames with 2D/3D bounding boxes, 6-DoF poses, and instance
+        identities, providing a comprehensive foundation for multimodal UAV perception and trajectory prediction research.
       </p>
 
       <div style="margin-top:20px;">
@@ -162,14 +169,51 @@
           style="border:none; border-radius:10px;">
         </iframe>
       </div>
+      <!-- Project 3: Reinforcement Learning Agent for Junqi -->
+      <h2>Reinforcement Learning Agent for Junqi</h2>
+      
+      <p style="color:#ccc; font-size:16px; line-height:24px;">
+        In this project, I developed a reinforcement learning (RL) agent for Junqi (Chinese Army Chess), a complex board game
+        requiring long-horizon planning amid hidden information. I formulated the game as a RL problem and adapted Deep
+        Q-Networks (DQN) to tackle its core challenges: partial observability, a large action space, and sparse, delayed
+        rewards. My key contributions included designing a compact state representation, a shaped reward function to promote
+        strategic exploration, and training a DQN agent that learned competitive policies from incomplete information. A
+        notable
+        outcome was the agent's emergent ability to determine the optimal timing for switching between offensive and defensive
+        strategies, resulting in robust and adaptive performance. This project offers a systematic analysis of deep RL in
+        hidden-state environments and demonstrates how DQN-based agents cultivate strategic behaviors under uncertainty.
+      </p>
+      
+      <div style="margin-top:20px;">
+        <iframe src="https://drive.google.com/file/d/1O1HDGR8QZdmWwQyw9c_4ZvriL9VYLT8x/preview" width="100%" height="430"
+          allow="autoplay" style="border:none; border-radius:10px;">
+        </iframe>
+      </div>
+      
+      <p style="margin-top:15px;">
+        📄 <a href="https://drive.google.com/file/d/1O1HDGR8QZdmWwQyw9c_4ZvriL9VYLT8x/view" target="_blank"
+          style="color:#ff8dd6; font-weight:bold; text-decoration:none;">
+          Technical Report
+        </a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        🔗 <a href="https://github.com/David-bit-jpg/Reinforcement-Learning-JunQi" target="_blank"
+          style="color:#ff8dd6; font-weight:bold; text-decoration:none;">
+          GitHub Repository
+        </a>
+      </p>
+
       <!-- Project 2: Avalon Multi-Agent Reasoning -->
       <h2>Multi-Agent Strategic Reasoning for Avalon</h2>
 
       <p style="color:#ccc; font-size:16px; line-height:24px;">
-        Developed a multi-agent LLM framework for imperfect-information strategic reasoning in the game Avalon.
-        Built personality-conditioned agents capable of memory tracking, belief updating, and hidden-role inference.
-        Fine-tuned Llama-3 models with role-specific priors and engineered structured internal states to support
-        negotiation, collaboration, and complete multi-agent gameplay cycles.
+          This project investigated the adaptation of large language models (LLMs) for complex, multi-agent strategic reasoning in
+          environments of imperfect information, using the social deduction game Avalon as a testbed. My independent work centered
+          on orchestrating multiple LLM agents by developing a novel framework that assigned personality-conditioned prompts and
+          implemented cognitive mechanisms for memory and belief updating. I fine-tuned Llama-3 models to adhere to role-specific
+          behavioral priors and engineered a structured internal state to track game history and infer hidden player alignments.
+          The resulting agent cohort successfully executed complete game cycles, exhibiting stable and belief-consistent strategic
+          behaviors—including negotiation and collaboration—despite inherent information asymmetry. This work underscores my
+          ability to formulate and execute a full-cycle research project at the intersection of NLP and multi-agent systems.
       </p>
 
       <div style="margin-top:20px;">
@@ -190,38 +234,17 @@
         </a>
       </p>
 
-      <!-- Project 3: Reinforcement Learning Agent for Junqi -->
-      <h2>Reinforcement Learning Agent for Junqi</h2>
-
-      <p style="color:#ccc; font-size:16px; line-height:24px;">
-        Built a deep reinforcement learning agent for the imperfect-information board game Junqi (Chinese Army Chess), using
-        DQN-based decision-making under hidden states, large action spaces, and sparse rewards. Designed state representation
-        and reward structure enabling long-horizon strategic planning, with emergent behaviors such as adaptive
-        offensive–defensive transitions.
-      </p>
-
-      <div style="margin-top:20px;">
-        <iframe src="https://drive.google.com/file/d/1O1HDGR8QZdmWwQyw9c_4ZvriL9VYLT8x/preview" width="100%" height="430"
-          allow="autoplay" style="border:none; border-radius:10px;">
-        </iframe>
-      </div>
-
-      <p style="margin-top:15px;">
-        📄 <a href="https://drive.google.com/file/d/1O1HDGR8QZdmWwQyw9c_4ZvriL9VYLT8x/view" target="_blank"
-          style="color:#ff8dd6; font-weight:bold; text-decoration:none;">
-          Technical Report
-        </a>
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-        🔗 <a href="https://github.com/David-bit-jpg/Reinforcement-Learning-JunQi" target="_blank"
-          style="color:#ff8dd6; font-weight:bold; text-decoration:none;">
-          GitHub Repository
-        </a>
-      </p>
-
       <!-- Project 2 -->
       <h2>Depression Severity Estimation System</h2>
       <p style="color:#ccc; font-size:16px; line-height:24px;">
-        Built a deep learning system that estimates depression severity from facial videos using HDR and FAU features processed through a DNN and deployed on a cross-platform web system.
+          In this project, I developed a deep learning-based system for estimating depression severity through facial video
+          analysis. Specifically, the OpenFace toolkit was adopted for facial detection and landmark tracking, from which I
+          derived two feature sets: (1) Histogram of Displacement Range (HDR) features, capturing the velocity and magnitude of
+          facial movements, and (2) Facial Action Unit (FAU) features, quantifying underlying muscle activations. These features
+          were used to train a deep neural network (DNN) for depression severity estimation. Based on this model, I developed a
+          cross-platform, web-based system where clients record a face video during a simulated semi-structured interview, and
+          servers process the video to extract features and generate a severity estimate via the DNN. The system also allows users
+          to review their assessment history and has been integrated into a longitudinal mental health monitoring platform.
       </p>
 
       <div style="margin-top:20px;">
@@ -243,7 +266,13 @@
       <!-- Project 3 -->
       <h2>Facial Expression Recognition System</h2>
       <p style="color:#ccc; font-size:16px; line-height:24px;">
-        Trained a CNN for facial expression recognition and built a hardware-triggered expression monitoring system.
+        This project involved the development of a real-time emotion monitoring and alert system for hospital inpatients,
+        leveraging deep learning for facial expression recognition. I trained a convolutional neural network (CNN) for emotion
+        classification and integrated it with a pipeline that uses the Viola-Jones algorithm for robust face detection in video
+        streams. The system is designed with a hardware module featuring indicator lights: a green light signifies the detection
+        of a positive or neutral expression, while a red light alerts nursing staff to a negative expression. Experimental
+        results confirmed that the system achieves high-accuracy, real-time emotion recognition, providing an efficient and
+        automated solution for monitoring patient well-being.
       </p>
 
       <div style="margin-top:20px;">
